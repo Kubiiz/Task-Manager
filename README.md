@@ -1,4 +1,4 @@
-Json output from server: 
+Json outputs from server: 
 *All tasks: https://etr.lv/tasks
 *Single task by taskID: https://etr.lv/tasks/1
 

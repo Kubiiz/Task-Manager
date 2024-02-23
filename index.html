@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Task Manager</h1>
+    </header>
+    <div id="content">
+      <h2><i class="fa fa-plus"></i> Add task</h2>
+      <form action="https://etr.lv/tasks/1" method="delete">
+        <div>
+          <label for="task">Task name</label>
+          <input
+            type="text"
+            placeholder="Enter task name"
+            name="task"
+            id="task"
+          />
+        </div>
+        <div>
+          <label for="date">Complete till</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div>
+          <label for="description">Task short description</label>
+          <textarea
+            placeholder="Enter short task description"
+            name="description"
+            id="description"
+          ></textarea>
+        </div>
+
+        <button class="todo_button" type="submit">
+          <i class="fas fa-plus-square"></i> Add
+        </button>
+      </form>
+    </div>
+    <div class="task_list">
+      <h2><i class="fa fa-list"></i> Task list</h2>
+      <table class="table">
+        <tr>
+          <th><i class="fa fa-list"></i> Task name</th>
+          <th><i class="fa fa-comment"></i> Description</th>
+          <th><i class="fa fa-clock"></i> Complete till</th>
+          <th><i class="fa fa-check-circle"></i> Completed</th>
+          <th><i class="fa fa-filter"></i> Options</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

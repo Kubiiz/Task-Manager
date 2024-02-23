@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: tahoma;
+  color: rgb(37, 37, 37);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#content,
+.task_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100vw;
+  gap: 10px;
+}
+
+#content h2,
+.task_list h2 {
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea,
+form button {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: tahoma;
+  color: rgb(37, 37, 37);
+  border-radius: 8px;
+  border: 1px solid #adadad;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  width: 80px;
+  color: #c065c0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form textarea {
+  height: 150px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+form button:hover {
+  background: #c065c0;
+  color: white;
+}
+
+form button i {
+  margin-right: 5px;
+}
+
+p.error {
+  color: red;
+  font-size: small;
+}
+
+.task_list .table {
+  width: 90vw;
+  border: 1px solid #cdcdcd;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.task_list .table th {
+  font-size: 15px;
+  padding: 10px 15px;
+  border: 1px dotted #cdcdcd;
+}
+
+.task_list .table tr {
+  border: 1px dotted #e0e0e0;
+}
+
+.task_list .table tr:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.task_list .table tr:first-child {
+  background-color: rgb(255, 255, 255);
+}
+
+.task_list .table tr:nth-child(even) {
+  background-color: rgb(248, 248, 248);
+}
+
+.task_list .table td {
+  border: 1px dotted #cdcdcd;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.task_list .table td .green {
+  color: green;
+}
+
+.task_list .table td .red {
+  color: red;
+}
+
+.task_list .table td {
+  border: 1px dotted #cdcdcd;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.task_list .table .td {
+  text-align: center;
+  width: 10%;
+}
+
+.task_list .table span {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.task_list .table span i {
+  transition: 0.3s;
+}
+
+.task_list .table span i:hover {
+  transform: scale(1.4);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+}
